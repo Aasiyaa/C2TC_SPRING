@@ -12,8 +12,15 @@ public class Mobile {
 		
 		//creating airtel object
 		Airtel a=(Airtel)ac.getBean("air");
+		//we can type cast
+		//Airtel a=ac.getBean("air",Airtel.class);
 		a.calling();
 		a.data();
+		
+		//creating sim object
+//    	Sim s=(Sim)ac.getBean("sim");
+//		s.calling();
+//		s.data();
 		
 		//creating bsnl object
 		BSNL b=(BSNL)ac.getBean("bsnl");
